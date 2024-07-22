@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Pasta";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/PastaPalazzo.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/PastaPalazzo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Krinkes";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/KrinkesDecorPERSONALUSE.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/KrinkesDecorPERSONALUSE.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Retrocycles";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/RetrocyclesRegular.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/RetrocyclesRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --heading-tilt: -10deg;
+  --skew-tilt: -5deg;
+  --accent-color: #953127;
+  --primary-color: white;
+  --button-border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  animation: landing-title-hover 3s linear infinite;
+  border: 1px solid var(--accent-color);
+}
+@keyframes landing-title-hover {
+  0% {
+    transform: translateY(0) rotate(var(--heading-tilt)) skew(var(--skew-tilt));
+  }
+  33% {
+    transform: translateY(10px) rotate(var(--heading-tilt)) skew(var(--skew-tilt));
+  }
+  66% {
+    transform: translateY(-10px) rotate(var(--heading-tilt)) skew(var(--skew-tilt));
+  }
+  100% {
+    transform: translateY(-1px) rotate(var(--heading-tilt)) skew(var(--skew-tilt));
+  }
+}
+.landing-page-container .title-heading {
+  font-size: 3rem;
+  display: grid;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid var(--accent-color);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr;
+}
+.landing-page-container .title-heading span {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.landing-page-container .title-heading .landing-what {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: end;
+  justify-self: end;
+  padding-right: 1rem;
+  font-family: "pasta", "anonymous pro";
+  font-size: 6rem;
+  align-self: center;
+}
+.landing-page-container .title-heading .landing-to {
+  align-self: center;
+  font-family: "pasta", "anonymous pro";
+  background-color: var(--accent-color);
+  padding: 0.3rem 0.2rem;
+  text-align: center;
+  color: var(--primary-color);
+  border-radius: var(--button-border-radius);
+}
+.landing-page-container .title-heading .landing-do {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  justify-self: center;
+}
+.landing-page-container .title-heading .landing-next {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  font-size: 8rem;
+  font-family: "Retrocycles";
+  text-shadow: -7px 8px var(--accent-color);
+}
+.landing-page-container .get-started-div .get-started-button {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  border-radius: var(--button-border-radius);
+  font-family: "Retrocycles";
+  background-color: var(--primary-color);
+}
+.landing-page-container .get-started-div .get-started-button .get-started-button-rocket {
+  background-color: var(--accent-color);
+}
+.landing-page-container .get-started-div .get-started-button-rocket {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: auto;
+  transition: transform 0.3s linear;
+}
+.landing-page-container .get-started-div .get-started-button:hover {
+  cursor: pointer;
+}
+.landing-page-container .get-started-div .get-started-button:hover .get-started-button-rocket {
+  transform: scale(1.2);
+}
+
+.name-age-container .name-div .my-name-input {
+  font-size: 3.5rem;
+}
+.name-age-container .age-div .my-age-input {
+  font-size: 2.5rem;
+}
+@keyframes buttondisappear {}/*# sourceMappingURL=styles.css.map */
