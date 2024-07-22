@@ -150,10 +150,32 @@ body {
   transform: scale(1.2);
 }
 
+.name-age-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.name-age-container .name-div .my-name-is {
+  font-size: 3rem;
+}
 .name-age-container .name-div .my-name-input {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  border-width: 0 0 1px 0;
+  border-color: solid black;
+}
+.name-age-container input {
+  transition: border-width 0.2s linear;
+}
+.name-age-container .age-div .my-age-is {
+  font-size: 2.3rem;
 }
 .name-age-container .age-div .my-age-input {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+.name-age-container input:focus-within {
+  border-bottom-width: 2px;
+}
+.name-age-container input:focus-visible {
+  outline: none;
+}
+
 @keyframes buttondisappear {}/*# sourceMappingURL=styles.css.map */

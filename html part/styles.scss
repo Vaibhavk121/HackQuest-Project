@@ -48,6 +48,7 @@ body {
     align-items: center;
 }
 
+//PAGE #1 - LANDING PAGE
 .landing-page-container {
     @keyframes landing-title-hover {
         from {
@@ -161,26 +162,41 @@ body {
         
 }
 
+
+//PAGE #2 - NAME AND AGE PAGE
 .name-age-container {
+    display: flex;
+    flex-flow: column nowrap;
     .name-div {
         .my-name-is {
-
+            font-size: 3rem;
         }
         .my-name-input {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
+            border-width: 0 0 1px 0;
+            border-color: solid black;
         }
+    }
+    input {
+        transition: border-width 0.2s linear;
     }
     .age-div {
         .my-age-is {
-
+            font-size: 2.3rem;
         }
         .my-age-input {
-            font-size: 2.5rem;
+            font-size: 2rem;
             
         }
         .my-age-is-fin {
 
         }
+    }
+    input:focus-within {
+        border-bottom-width: 2px;
+    }
+    input:focus-visible {
+        outline: none;
     }
 }
 
