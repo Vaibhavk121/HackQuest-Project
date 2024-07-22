@@ -64,6 +64,7 @@ const index = {
             "beginner": {
                 "topic_name": "Getting Started with Android Basics",
                 "topic_desc": "Learn the very basics of Android development. Understand the Android Studio interface, how to create simple apps, and get familiar with basic concepts like layouts and activities."
+                
             }
         },
         "softwareDev": {

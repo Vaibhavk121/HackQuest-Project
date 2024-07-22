@@ -169,12 +169,15 @@ body {
     flex-flow: column nowrap;
     .name-div {
         .my-name-is {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         .my-name-input {
             font-size: 2.5rem;
             border-width: 0 0 1px 0;
             border-color: solid black;
+            min-width: 6rem;
+            text-align: center;
+
         }
     }
     input {
@@ -185,8 +188,10 @@ body {
             font-size: 2.3rem;
         }
         .my-age-input {
+            border-width: 0 0 1px 0;
             font-size: 2rem;
-            
+            width: 4rem;
+            text-align: center;
         }
         .my-age-is-fin {
 
